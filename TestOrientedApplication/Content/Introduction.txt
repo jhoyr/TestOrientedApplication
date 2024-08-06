@@ -1,0 +1,43 @@
+﻿	
+	Este módulo de aprendizagem aborda o motivo pelo qual testamos e fornece uma breve introdução às práticas recomendadas para testar o software.
+Vamos abordar diferentes tipos de teste, começando do nível mais fundamental: os testes de unidade. Também vamos mencionar várias perspectivas em relação ao teste.
+	
+	Se você quiser começar a testar imediatamente, confira Testar C# no Visual Studio. Você pode mergulhar diretamente na escrita e execução de testes. 
+Se você preferir aprender com uma interface de linha de comando, confira Testes de unidade do C# com MSTest e .NET (https://learn.microsoft.com/pt-br/dotnet/core/testing/unit-testing-with-mstest).
+	
+O QUE É TESTE?
+		Ao testar, escrevendo código ou executando testes manuais, você faz isso porque deseja garantir que seu software funcione conforme o esperado. Esta unidade se concentra na escrita de um
+	código que testa várias partes do código do aplicativo. O código de teste não será enviado com o código do aplicativo. Pense no código de teste como uma base que dá suporte ao processo de 
+	desenvolvimento de software durante todo o tempo de vida do programa.
+
+O PROCESSO DE TESTE
+		O teste envolve uma série de métodos que são executados no código do produto e que retornam um resultado aprovado ou com falha. O resultado é baseado em determinados critérios que são declarados.
+	Os resultados do teste aparecem em uma lista de marcas "x" vermelhas para representar testes com falha e marcas "✔" verdes para representar testes aprovados. Esses símbolos facilitam a avaliação de 
+	qual funcionalidade está funcionando ou não rapidamente.
+
+DEFINIÇÃO DO MÉTODO DE TESTE
+		Os testes são muito parecidos com os métodos regulares. Eles são organizados em classes de teste, têm assinaturas de método e aceitam parâmetros. Os testes referenciam e chamam o código do produto
+	(outra maneira de dizer o código que não é o do teste) e compara como eles se comporta em relação a um resultado esperado.
+
+		Uma diferença entre testes e o código do produto é que eles não são executados como parte da função normal do aplicativo. Portanto, em vez de usar F5 (ou o botão de execução verde grande na parte 
+	superior do seu ambiente de desenvolvimento) para executar como faria com seu aplicativo, você escolhe quais testes executar. Você pode fazer essa escolha por meio do Gerenciador de Testes do Visual 
+	Studio ou de outras ferramentas úteis do editor. Os testes estão lá para dar suporte, mas como eles não são fornecidos com o aplicativo, eles são executados de maneira independente, como se fossem 
+	aplicativos.
+
+COMO OS TESTES PODEM AJUDAR A EVITAR REGRESSÕES NA FUNCIONALIDADE?
+		
+
+
+
+
+
+
+
+
+Ciclo de um TDD (Test-Driven Development):
+	- Red: Escrever um teste que falha e em seguida, execute o teste acompanhando a falha
+	- Green: Desenvolva primeiro a solução mais simpls, depois, teste novamente, mas desta vez, é pra passar.
+	- Refactor: Refatore a funcionalidade e escreva-a por completo, eliminando redundância e acoplamentos, deixando o design do código mais bonito e legível.
+	Após isso, siga para a próxima funcionalidade.
+
+	"Primeiro faça, depois faça certo, depois faça melhor."
